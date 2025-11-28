@@ -31,7 +31,7 @@ public class Appointment {
     private LocalTime pickupTime;
 
     @NotNull(message = "Garage is verplicht")
-    @ManyToOne(cascade = CascadeType.PERSIST)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "garage_id")
     private Garage garage;
 

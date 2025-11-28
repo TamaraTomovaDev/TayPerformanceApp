@@ -1,0 +1,14 @@
+POST http://localhost:8080/api/appointments
+Content-Type: application/json
+
+{
+  "date": "2025-01-10",
+  "time": "14:00",
+  "pickupTime": "13:00",
+  "phone": "0499999999",
+  "description": "Oil change",
+  "price": 90,
+  "garage": {
+    "id": 1
+  }
+}
